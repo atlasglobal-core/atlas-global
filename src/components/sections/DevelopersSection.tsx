@@ -3,19 +3,19 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import {
-  FlaskConical,
-  Box,
-  Rocket,
-  Puzzle,
+  FileText,
+  Code,
+  Package,
+  Github,
   type LucideIcon,
 } from "lucide-react";
-import { whyAtlasData } from "@/data/homepage";
+import { developersData } from "@/data/homepage";
 
 const iconMap: Record<string, LucideIcon> = {
-  FlaskConical,
-  Box,
-  Rocket,
-  Puzzle,
+  FileText,
+  Code,
+  Package,
+  Github,
 };
 
 const itemVariants = {
@@ -24,71 +24,77 @@ const itemVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.1,
+      delay: i * 0.08,
       duration: 0.4,
       ease: "easeOut",
     },
   }),
 };
 
-export function WhyAtlasSection() {
+export function DevelopersSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const inView = useInView(sectionRef, { once: true, margin: "-80px" });
 
   return (
     <section
-      id={whyAtlasData.id}
+      id={developersData.id}
       ref={sectionRef}
       className="border-t border-[rgba(148,163,184,0.14)] py-24"
-      aria-labelledby="why-atlas-heading"
+      aria-labelledby="developers-heading"
     >
       <div className="atlas-container">
         {/* Header */}
-        <div className="mb-16 text-center">
+        <div className="mb-14 text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[#8B5CF6]">
-            {whyAtlasData.eyebrow}
+            {developersData.eyebrow}
           </p>
           <h2
-            id="why-atlas-heading"
+            id="developers-heading"
             className="mx-auto max-w-2xl text-3xl font-bold leading-tight tracking-tight text-[#F8FAFC] sm:text-4xl lg:text-5xl"
           >
-            {whyAtlasData.headline}
+            {developersData.headline.map((line, i) => (
+              <span key={i}>
+                {line}
+                {i < developersData.headline.length - 1 && <br />}
+              </span>
+            ))}
           </h2>
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#A8B1C2]">
+            {developersData.description}
+          </p>
         </div>
 
-        {/* Values grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {whyAtlasData.propositions.map((prop, i) => {
-            const Icon = iconMap[prop.icon] ?? FlaskConical;
+        {/* Developer tools grid */}
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {developersData.items.map((item, i) => {
+            const Icon = iconMap[item.icon] ?? FileText;
             return (
               <motion.div
-                key={prop.title}
+                key={item.title}
                 custom={i}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
                 variants={itemVariants}
-                className="flex flex-col items-center text-center"
+                className="group relative flex flex-col rounded-xl border border-[rgba(148,163,184,0.14)] bg-[#0B1426] p-6 transition-colors duration-200 hover:border-[rgba(148,163,184,0.28)]"
               >
                 {/* Icon */}
                 <div
-                  className="mb-4 flex size-14 items-center justify-center rounded-2xl"
-                  style={{
-                    backgroundColor: `${prop.accent}15`,
-                  }}
+                  className="mb-4 flex size-10 items-center justify-center rounded-lg"
+                  style={{ backgroundColor: `${item.accent}15` }}
                 >
                   <Icon
-                    className="size-7"
-                    style={{ color: prop.accent }}
+                    className="size-5"
+                    style={{ color: item.accent }}
                     aria-hidden="true"
                   />
                 </div>
 
                 {/* Content */}
                 <h3 className="mb-2 text-lg font-semibold text-[#F8FAFC]">
-                  {prop.title}
+                  {item.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-[#7F8BA3]">
-                  {prop.description}
+                  {item.description}
                 </p>
               </motion.div>
             );

@@ -117,7 +117,7 @@ export function AtlasMobileNavigation({ open, onClose }: AtlasMobileNavigationPr
               openDialog();
               onClose();
             }}
-            className="w-full rounded-lg bg-[#7C3AED] px-6 py-3 text-base font-medium text-white transition-colors hover:bg-[#6D28D9]"
+            className="w-full rounded-lg border border-[rgba(148,163,184,0.25)] px-6 py-3 text-base font-medium text-[#F8FAFC] transition-all hover:bg-white/5"
           >
             Falar com a Atlas
           </button>

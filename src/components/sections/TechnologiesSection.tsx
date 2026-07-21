@@ -12,16 +12,24 @@ export function TechnologiesSection() {
   return (
     <section id="tecnologias" className="py-24">
       <div className="atlas-container">
-        {/* Header */}
-        <div className="mb-12 max-w-2xl">
-          <p className="mb-4 text-xs font-medium uppercase tracking-widest text-[#8B5CF6]">
-            TECNOLOGIAS QUE UTILIZAMOS
-          </p>
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#F8FAFC] sm:text-4xl lg:text-5xl">
-            As melhores tecnologias.
-            <br />
-            <span className="gradient-text">Para os melhores resultados.</span>
-          </h2>
+        {/* Header with right-aligned button */}
+        <div className="mb-12 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <div className="max-w-2xl">
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[#8B5CF6]">
+              TECNOLOGIAS QUE UTILIZAMOS
+            </p>
+            <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#F8FAFC] sm:text-4xl lg:text-5xl">
+              Ferramentas modernas para{" "}
+              <span className="gradient-text">soluções de próxima geração.</span>
+            </h2>
+          </div>
+          <AtlasButton
+            variant="secondary"
+            onClick={() => setTechDialogOpen(true)}
+            className="shrink-0"
+          >
+            Ver todas as tecnologias
+          </AtlasButton>
         </div>
 
         {/* Badges */}
@@ -29,19 +37,6 @@ export function TechnologiesSection() {
           {techBadges.map((badge) => (
             <AtlasTechnologyBadge key={badge.name} name={badge.name} />
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="mt-10">
-          <AtlasButton
-            variant="secondary"
-            onClick={() => setTechDialogOpen(true)}
-          >
-            Ver todas as tecnologias
-          </AtlasButton>
-          <p className="mt-3 text-sm text-[#7F8BA3]">
-            Tecnologias utilizadas e previstas na arquitetura Atlas.
-          </p>
         </div>
 
         {/* Dialog */}

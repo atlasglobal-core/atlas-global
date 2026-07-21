@@ -1,5 +1,6 @@
 "use client";
 
+import { MessageCircle } from "lucide-react";
 import { heroData } from "@/data/homepage";
 import { useContactStore } from "@/lib/contact-store";
 import { AtlasButton } from "@/components/atlas/AtlasButton";
@@ -11,27 +12,38 @@ export function HeroSection() {
   return (
     <section
       id={heroData.id}
-      className="relative min-h-screen overflow-hidden pt-16 lg:pt-18"
+      className="relative min-h-screen overflow-hidden pt-16 lg:pt-[72px]"
       aria-labelledby="hero-heading"
     >
       {/* Background radial glow */}
       <div
-        className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[700px] w-[900px] rounded-full bg-[#7C3AED]/10 blur-[120px]"
+        className="pointer-events-none absolute top-0 left-1/3 -translate-x-1/2 h-[700px] w-[900px] rounded-full bg-[#7C3AED]/10 blur-[120px]"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute top-20 right-1/4 h-[500px] w-[600px] rounded-full bg-[#3B82F6]/8 blur-[100px]"
         aria-hidden="true"
       />
 
-      <div className="atlas-container relative flex min-h-[calc(100vh-4rem)] flex-col items-center lg:min-h-[calc(100vh-4.5rem)] lg:flex-row lg:items-center lg:gap-12">
+      <div className="atlas-container relative flex min-h-[calc(100vh-4rem)] flex-col items-center lg:min-h-[calc(100vh-72px)] lg:flex-row lg:items-center lg:gap-16">
         {/* Text column */}
-        <div className="relative z-10 w-full lg:w-[45%]">
+        <div className="relative z-10 w-full pt-12 lg:pt-0 lg:w-[45%]">
           {/* Eyebrow */}
-          <p className="mb-6 text-xs font-medium uppercase tracking-widest text-[#8B5CF6]">
+          <p className="mb-6 text-xs font-medium uppercase tracking-[0.2em] text-[#8B5CF6]">
             {heroData.eyebrow}
           </p>
 
           {/* Headline */}
-          <h1 id="hero-heading" className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 id="hero-heading" className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-[3.5rem] xl:text-6xl">
             {heroData.headline.map((line, i) => (
-              <span key={i} className={i === 1 ? " gradient-text" : " text-[#F8FAFC]"}>
+              <span
+                key={i}
+                className={
+                  i >= heroData.headlineGradientStart && i <= heroData.headlineGradientEnd
+                    ? " gradient-text"
+                    : " text-[#F8FAFC]"
+                }
+              >
                 {line}
                 {i < heroData.headline.length - 1 && <br />}
               </span>
@@ -39,7 +51,7 @@ export function HeroSection() {
           </h1>
 
           {/* Description */}
-          <p className="mt-6 max-w-lg text-base leading-relaxed text-[#A8B1C2] sm:text-lg">
+          <p className="mt-6 max-w-lg text-base leading-[1.7] text-[#A8B1C2] sm:text-lg">
             {heroData.description}
           </p>
 
@@ -48,7 +60,7 @@ export function HeroSection() {
             <AtlasButton variant="primary" href={heroData.primaryCTA.href}>
               {heroData.primaryCTA.label}
             </AtlasButton>
-            <AtlasButton variant="secondary" onClick={openDialog}>
+            <AtlasButton variant="secondary" onClick={openDialog} icon={<MessageCircle className="size-4" aria-hidden="true" />}>
               {heroData.secondaryCTA.label}
             </AtlasButton>
           </div>
@@ -58,7 +70,10 @@ export function HeroSection() {
         <div className="relative z-0 mt-12 w-full lg:mt-0 lg:w-[55%]">
           <AtlasGlobe className="lg:relative" />
           {/* Mobile: reduced opacity */}
-          <div className="pointer-events-none absolute inset-0 bg-[#020611]/40 lg:hidden" aria-hidden="true" />
+          <div
+            className="pointer-events-none absolute inset-0 bg-[#020611]/40 lg:hidden"
+            aria-hidden="true"
+          />
         </div>
       </div>
     </section>

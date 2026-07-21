@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import type { EcosystemAccent } from "@/data/homepage";
 import {
+  Shield,
   Layers,
   Compass,
   Brain,
@@ -17,6 +18,7 @@ import {
 } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = {
+  Shield,
   Layers,
   Compass,
   Brain,

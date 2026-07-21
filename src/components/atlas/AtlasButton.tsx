@@ -13,6 +13,7 @@ interface AtlasButtonProps {
   onClick?: () => void;
   className?: string;
   icon?: ReactNode;
+  noIcon?: boolean;
   type?: "button" | "submit";
   disabled?: boolean;
 }
@@ -24,18 +25,19 @@ export function AtlasButton({
   onClick,
   className,
   icon,
+  noIcon = false,
   type = "button",
   disabled = false,
 }: AtlasButtonProps) {
   const defaultIcon = <ArrowRight className="size-4" aria-hidden="true" />;
-  const trailingIcon = icon ?? defaultIcon;
+  const trailingIcon = noIcon ? null : (icon ?? defaultIcon);
 
   const baseClasses =
     "inline-flex items-center gap-2 rounded-lg font-medium transition-all duration-250 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8B5CF6] disabled:opacity-50 disabled:pointer-events-none";
 
   const variantClasses: Record<AtlasButtonVariant, string> = {
     primary:
-      "bg-[#7C3AED] text-white hover:bg-[#6D28D9] active:bg-[#5B21B6] px-5 py-2.5 text-sm",
+      "gradient-bg text-white hover:opacity-90 active:opacity-80 px-5 py-2.5 text-sm",
     secondary:
       "border border-[#374151] text-[#A8B1C2] hover:border-[#8B5CF6] hover:text-[#F8FAFC] px-5 py-2.5 text-sm",
   };
@@ -45,9 +47,11 @@ export function AtlasButton({
   const content = (
     <>
       <span>{children}</span>
-      <span className="transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true">
-        {trailingIcon}
-      </span>
+      {trailingIcon && (
+        <span className="transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true">
+          {trailingIcon}
+        </span>
+      )}
     </>
   );
 

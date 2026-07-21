@@ -85,8 +85,8 @@ export function TechnologyTrustSection() {
   return (
     <section className="border-t border-b border-[rgba(148,163,184,0.14)] py-12" aria-label="Tecnologias de confiança">
       <div className="atlas-container">
-        <p className="mb-8 text-center text-xs font-medium uppercase tracking-widest text-[#7F8BA3]">
-          TECNOLOGIA, CONFIANÇA E INOVAÇÃO
+        <p className="mb-8 text-center text-xs font-medium uppercase tracking-[0.2em] text-[#7F8BA3]">
+          TECNOLOGIA E INOVAÇÃO EM QUE CONFIAMOS
         </p>
         <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 lg:gap-16">
           {trustTechnologies.map((tech) => {
