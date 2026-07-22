@@ -1,0 +1,1664 @@
+     1→ATLAS GLOBAL
+     2→OFFICIAL HOMEPAGE IMPLEMENTATION PROMPT v1.1
+     3→
+     4→Repository:
+     5→https://github.com/atlasglobal-core/atlas-global.git
+     6→
+     7→Production domain:
+     8→https://atlasglobal.digital
+     9→
+    10→Official visual specification:
+    11→Attached file: AtlasGlobal.png
+    12→
+    13→Working branch:
+    14→feat/official-homepage-v1
+    15→
+    16→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    17→1. EXECUTION MANDATE
+    18→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    19→
+    20→You are the official Product Engineering Team responsible for launching the first production-ready public homepage of Atlas Global.
+    21→
+    22→You are acting as:
+    23→
+    24→• Lead Product Engineer
+    25→• Principal Frontend Architect
+    26→• Senior Next.js Engineer
+    27→• Senior React Engineer
+    28→• TypeScript Architect
+    29→• Design System Engineer
+    30→• UX Engineer
+    31→• Accessibility Engineer
+    32→• Performance Engineer
+    33→• SEO Engineer
+    34→• Release Engineer
+    35→
+    36→This is an implementation task.
+    37→
+    38→Do not stop after writing an audit, proposal or implementation plan.
+    39→
+    40→You must:
+    41→
+    42→1. Inspect the existing repository.
+    43→2. Create the required feature branch.
+    44→3. Implement the approved homepage.
+    45→4. Validate the complete project.
+    46→5. Commit the implementation.
+    47→6. Push the feature branch.
+    48→7. Open a Pull Request into main when supported.
+    49→8. Return a complete implementation report.
+    50→
+    51→The immediate priority is:
+    52→
+    53→PUT ATLAS GLOBAL ONLINE.
+    54→
+    55→Do not attempt to build the complete Atlas ecosystem during this phase.
+    56→
+    57→Build the official institutional homepage required for launch.
+    58→
+    59→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    60→2. OFFICIAL POSITIONING
+    61→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    62→
+    63→Official identity:
+    64→
+    65→ATLAS GLOBAL
+    66→Research • Architecture • Platforms
+    67→
+    68→Official definition:
+    69→
+    70→Atlas Global is a Technology Research, Architecture and Platform Company.
+    71→
+    72→Atlas Global researches, architects, develops and operates intelligent digital platforms and integrated technological ecosystems.
+    73→
+    74→Its areas include:
+    75→
+    76→• Artificial Intelligence
+    77→• Software Engineering
+    78→• Platform Architecture
+    79→• Cloud Infrastructure
+    80→• Data
+    81→• Automation
+    82→• Financial Technology
+    83→• Blockchain
+    84→• Applied Research
+    85→• Enterprise Architecture
+    86→• International Business
+    87→• Digital Transformation
+    88→
+    89→Atlas Global must not be presented merely as:
+    90→
+    91→• a SaaS company;
+    92→• a software house;
+    93→• a consulting agency;
+    94→• an AI agency;
+    95→• a cloud provider;
+    96→• a financial institution.
+    97→
+    98→Atlas Global is the institutional organization coordinating an integrated ecosystem of platforms, specialist units, technological capabilities and independent projects.
+    99→
+   100→The homepage must be:
+   101→
+   102→Institutional-led.
+   103→Technology-driven.
+   104→Conversion-enabled.
+   105→
+   106→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   107→3. VISUAL AUTHORITY
+   108→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   109→
+   110→The attached AtlasGlobal.png file is the official approved visual specification for the homepage.
+   111→
+   112→It is not inspiration.
+   113→
+   114→It is not a draft.
+   115→
+   116→It is not a mood board.
+   117→
+   118→It is the approved design.
+   119→
+   120→Reproduce with maximum reasonable fidelity:
+   121→
+   122→• section order;
+   123→• general proportions;
+   124→• horizontal margins;
+   125→• vertical rhythm;
+   126→• typography hierarchy;
+   127→• navbar composition;
+   128→• hero composition;
+   129→• globe scale and positioning;
+   130→• button hierarchy;
+   131→• card layout;
+   132→• card proportions;
+   133→• spacing;
+   134→• borders;
+   135→• background tones;
+   136→• violet and blue accents;
+   137→• technology strip;
+   138→• final CTA;
+   139→• footer composition.
+   140→
+   141→Do not redesign the homepage.
+   142→
+   143→Do not introduce another visual direction.
+   144→
+   145→Do not combine the approved blue-violet identity with the current gold design system.
+   146→
+   147→Do not use the entire mockup image as a webpage background.
+   148→
+   149→Do not display the screenshot instead of implementing real components.
+   150→
+   151→Build the page with real:
+   152→
+   153→• HTML;
+   154→• React components;
+   155→• CSS and Tailwind;
+   156→• SVG;
+   157→• optimized local images;
+   158→• accessible interactions.
+   159→
+   160→Authority order:
+   161→
+   162→1. AtlasGlobal.png
+   163→2. This implementation prompt
+   164→3. Existing repository conventions compatible with the design
+   165→4. Existing source code
+   166→5. Your own design decisions
+   167→
+   168→Your own interpretation must not override the official mockup.
+   169→
+   170→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   171→4. REPOSITORY RULES
+   172→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   173→
+   174→Use the existing repository:
+   175→
+   176→https://github.com/atlasglobal-core/atlas-global.git
+   177→
+   178→Do not create another repository.
+   179→
+   180→Do not initialize a new Next.js project.
+   181→
+   182→Do not replace the repository with a boilerplate.
+   183→
+   184→Do not erase Git history.
+   185→
+   186→Do not force-push.
+   187→
+   188→Required Git workflow:
+   189→
+   190→1. Checkout main.
+   191→2. Pull the latest main branch.
+   192→3. Inspect the existing implementation.
+   193→4. Create:
+   194→
+   195→feat/official-homepage-v1
+   196→
+   197→5. Implement all changes in that branch.
+   198→6. Validate the project.
+   199→7. Commit using:
+   200→
+   201→feat(web): implement official Atlas Global homepage v1
+   202→
+   203→8. Push the branch.
+   204→9. Open a Pull Request into main when supported.
+   205→
+   206→Do not commit directly to main.
+   207→
+   208→The current codebase already uses:
+   209→
+   210→• Next.js 16
+   211→• React 19
+   212→• TypeScript
+   213→• Tailwind CSS 4
+   214→• shadcn/ui
+   215→• Radix UI
+   216→• Framer Motion
+   217→• Lucide React
+   218→• next-intl
+   219→• React Hook Form
+   220→• Zod
+   221→
+   222→Preserve this stack.
+   223→
+   224→Do not downgrade Next.js.
+   225→
+   226→Do not downgrade React.
+   227→
+   228→Do not migrate Tailwind CSS 4 to Tailwind CSS 3.
+   229→
+   230→Do not introduce another component framework.
+   231→
+   232→Use the package manager indicated by the repository lockfile.
+   233→
+   234→Do not install dependencies that are not genuinely required.
+   235→
+   236→Before implementation, inspect:
+   237→
+   238→• package.json
+   239→• lockfile
+   240→• src/app/page.tsx
+   241→• src/app/layout.tsx
+   242→• src/app/globals.css
+   243→• src/components/
+   244→• src/data/
+   245→• src/config/
+   246→• src/types/
+   247→• public/
+   248→• next.config.*
+   249→• tsconfig.json
+   250→• eslint configuration
+   251→• README.md
+   252→• sitemap
+   253→• robots
+   254→• existing metadata
+   255→• existing logo assets
+   256→
+   257→Perform this inspection quickly and continue directly to implementation.
+   258→
+   259→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   260→5. PHASE 1 SCOPE
+   261→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   262→
+   263→Implement only:
+   264→
+   265→1. Atlas Navbar
+   266→2. Hero
+   267→3. Technology trust strip
+   268→4. Atlas Ecosystem
+   269→5. Why Atlas
+   270→6. Technology stack
+   271→7. Final CTA
+   272→8. Footer
+   273→9. Contact dialog
+   274→10. Mobile navigation
+   275→11. SEO foundation
+   276→12. Responsive behaviour
+   277→13. Deployment readiness
+   278→
+   279→The homepage must be:
+   280→
+   281→• production-ready;
+   282→• responsive;
+   283→• accessible;
+   284→• visually faithful;
+   285→• performant;
+   286→• maintainable;
+   287→• multilingual-ready;
+   288→• free of broken links;
+   289→• free of fake information;
+   290→• free of console errors;
+   291→• free of visible unfinished placeholders.
+   292→
+   293→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   294→6. PHASE 1 NON-GOALS
+   295→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   296→
+   297→Do not implement:
+   298→
+   299→• Atlas Core backend;
+   300→• authentication;
+   301→• organizations;
+   302→• user accounts;
+   303→• client portals;
+   304→• dashboards;
+   305→• Supabase integration;
+   306→• Prisma database integration;
+   307→• CMS;
+   308→• billing;
+   309→• blog;
+   310→• documentation portal;
+   311→• Developer Portal;
+   312→• AI Concierge;
+   313→• RAG;
+   314→• AI chat endpoints;
+   315→• cinematic intro animation;
+   316→• sound;
+   317→• blocking WebGL scenes;
+   318→• fake platform previews;
+   319→• fake metrics;
+   320→• fake testimonials;
+   321→• fake customers;
+   322→• fake partnerships;
+   323→• fake certifications;
+   324→• fake offices;
+   325→• fake team members;
+   326→• unverified financial claims.
+   327→
+   328→Do not add independent homepage sections for:
+   329→
+   330→• Atlas Core;
+   331→• Atlas Platform dashboard;
+   332→• Business Services;
+   333→• Developers;
+   334→• Community;
+   335→• Academy;
+   336→• Industries;
+   337→• Products;
+   338→• Global Vision;
+   339→• AI Native;
+   340→• Research publications.
+   341→
+   342→These belong to future pages and phases.
+   343→
+   344→Do not add Atlas Core as a ninth ecosystem card.
+   345→
+   346→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   347→7. REFERENCE LAYOUT
+   348→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   349→
+   350→The official mockup canvas is 1024 × 1536 px.
+   351→
+   352→At approximately 1024 px viewport width, preserve the following visual ratios:
+   353→
+   354→• Navbar: approximately 72 px high
+   355→• Hero: approximately 370 px
+   356→• Technology strip: approximately 90 px
+   357→• Ecosystem: approximately 400 px
+   358→• Why Atlas: approximately 145 px
+   359→• Technology stack: approximately 130 px
+   360→• Final CTA: approximately 165 px
+   361→• Footer: approximately 160 px
+   362→
+   363→These are reference proportions.
+   364→
+   365→Do not implement rigid fixed heights that clip content.
+   366→
+   367→Use a central desktop container approximately equivalent to the visual margins in the mockup.
+   368→
+   369→Preserve:
+   370→
+   371→• strong horizontal alignment;
+   372→• compact institutional density;
+   373→• consistent section borders;
+   374→• clear visual hierarchy;
+   375→• generous but controlled spacing.
+   376→
+   377→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   378→8. NAVBAR
+   379→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   380→
+   381→The header must closely reproduce the mockup.
+   382→
+   383→Left:
+   384→
+   385→• Atlas symbol
+   386→• ATLAS GLOBAL wordmark
+   387→• Research • Architecture • Platforms subtitle
+   388→
+   389→Navigation:
+   390→
+   391→• Início
+   392→• Soluções
+   393→• Ecossistema
+   394→• Tecnologias
+   395→• Sobre Nós
+   396→• Recursos
+   397→
+   398→Right:
+   399→
+   400→• Falar com a Atlas
+   401→• Language selector
+   402→• Mobile menu button on smaller screens
+   403→
+   404→Required behaviour:
+   405→
+   406→• sticky or fixed;
+   407→• transparent at page start;
+   408→• subtle dark background after scrolling;
+   409→• thin lower border after scrolling;
+   410→• correct keyboard navigation;
+   411→• visible focus states;
+   412→• accessible mobile menu;
+   413→• ESC closes the mobile menu;
+   414→• body scrolling is controlled while menu is open;
+   415→• no layout shift.
+   416→
+   417→Anchor mapping:
+   418→
+   419→• Início → #inicio
+   420→• Soluções → #ecossistema
+   421→• Ecossistema → #ecossistema
+   422→• Tecnologias → #tecnologias
+   423→• Sobre Nós → #sobre
+   424→• Recursos → #recursos
+   425→
+   426→“Falar com a Atlas” opens the contact dialog.
+   427→
+   428→Do not create links to unfinished pages.
+   429→
+   430→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   431→9. HERO
+   432→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   433→
+   434→Required identifier:
+   435→
+   436→#inicio
+   437→
+   438→Eyebrow:
+   439→
+   440→RESEARCH • ARCHITECTURE • PLATFORMS
+   441→
+   442→Official headline:
+   443→
+   444→Arquitetamos o futuro.
+   445→Construímos o que
+   446→impulsiona o mundo.
+   447→
+   448→Visual hierarchy:
+   449→
+   450→• “Arquitetamos o futuro.” in white or near-white.
+   451→• “Construímos o que impulsiona o mundo.” in the approved violet-to-blue gradient.
+   452→• Preserve the line breaks and balance shown in the mockup.
+   453→• Do not reduce the headline to one generic line.
+   454→
+   455→Official supporting copy:
+   456→
+   457→A Atlas Global pesquisa, desenha e desenvolve plataformas tecnológicas inteligentes que transformam ideias complexas em soluções digitais escaláveis.
+   458→
+   459→Primary CTA:
+   460→
+   461→Explorar Ecossistema
+   462→
+   463→Behaviour:
+   464→
+   465→Scroll smoothly to #ecossistema.
+   466→
+   467→Secondary CTA:
+   468→
+   469→Falar com a Atlas
+   470→
+   471→Behaviour:
+   472→
+   473→Open the contact dialog.
+   474→
+   475→Hero composition:
+   476→
+   477→• approximately 45% content;
+   478→• approximately 55% globe area;
+   479→• text aligned to the left;
+   480→• globe dominant on the right;
+   481→• subtle background glow;
+   482→• no dashboard preview;
+   483→• no metrics;
+   484→• no screenshots of software products.
+   485→
+   486→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   487→10. CONNECTED GLOBE
+   488→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   489→
+   490→The globe is the primary visual asset of the homepage.
+   491→
+   492→It must communicate:
+   493→
+   494→• international reach;
+   495→• digital infrastructure;
+   496→• networks;
+   497→• technology;
+   498→• data;
+   499→• global architecture.
+   500→
+   501→Implementation rules:
+   502→
+   503→1. Inspect whether a suitable local globe asset already exists.
+   504→2. Prefer a dedicated local WebP, AVIF, SVG or lightweight Canvas implementation.
+   505→3. Do not hotlink remote assets.
+   506→4. Do not use an image without clear usage rights.
+   507→5. Do not use the full mockup screenshot as the globe.
+   508→6. Do not introduce a large 3D framework solely for this component.
+   509→7. Do not make the hero depend on JavaScript to remain visible.
+   510→8. Optimize the asset for the required display size.
+   511→9. Provide fixed dimensions or aspect ratio to prevent layout shift.
+   512→10. Mark purely decorative layers appropriately for assistive technology.
+   513→11. Respect prefers-reduced-motion.
+   514→12. Provide a static fallback.
+   515→
+   516→Permitted motion:
+   517→
+   518→• very slow rotation;
+   519→• subtle node pulses;
+   520→• soft network-line movement;
+   521→• restrained glow animation.
+   522→
+   523→Do not implement aggressive particles or motion that reduces readability.
+   524→
+   525→On mobile:
+   526→
+   527→• content appears first;
+   528→• the globe appears below or behind with reduced opacity;
+   529→• the globe must not cover the heading;
+   530→• no horizontal overflow;
+   531→• no clipped visual content.
+   532→
+   533→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   534→11. TECHNOLOGY TRUST STRIP
+   535→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   536→
+   537→Position immediately below the hero.
+   538→
+   539→Label:
+   540→
+   541→TECNOLOGIA, CONFIANÇA E INOVAÇÃO
+   542→
+   543→Display:
+   544→
+   545→• AWS
+   546→• Supabase
+   547→• Next.js
+   548→• Docker
+   549→• OpenAI
+   550→• Stripe
+   551→• Cloudflare
+   552→
+   553→Important:
+   554→
+   555→Do not call these organizations official partners.
+   556→
+   557→Do not display “Technology Partners”.
+   558→
+   559→Present them as technologies used within the Atlas technology ecosystem.
+   560→
+   561→Use:
+   562→
+   563→• monochrome local SVGs where available;
+   564→• accessible labels;
+   565→• correct proportions;
+   566→• consistent visual weight;
+   567→• controlled opacity.
+   568→
+   569→Do not hotlink logos.
+   570→
+   571→Do not alter official trademarks beyond monochrome visual treatment.
+   572→
+   573→On mobile, allow the items to wrap or use an accessible controlled marquee that stops when reduced motion is enabled.
+   574→
+   575→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   576→12. ATLAS ECOSYSTEM
+   577→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   578→
+   579→Required identifier:
+   580→
+   581→#ecossistema
+   582→
+   583→Eyebrow:
+   584→
+   585→ECOSSISTEMA ATLAS
+   586→
+   587→Heading:
+   588→
+   589→Soluções que se conectam.
+   590→Plataformas que escalam.
+   591→
+   592→Supporting copy:
+   593→
+   594→Um ecossistema completo de produtos e serviços que trabalham em conjunto para acelerar o crescimento e a transformação digital.
+   595→
+   596→Action:
+   597→
+   598→Ver todo o ecossistema
+   599→
+   600→For phase 1, this action must focus or scroll to the complete ecosystem grid.
+   601→
+   602→Do not link to a nonexistent route.
+   603→
+   604→Display exactly eight cards.
+   605→
+   606→1. Atlas Platform
+   607→
+   608→Plataforma modular para criar, gerir e escalar soluções digitais inteligentes.
+   609→
+   610→2. Atlas Advisory
+   611→
+   612→Consultoria estratégica para negócios internacionais, finanças, operações e tecnologia.
+   613→
+   614→3. Atlas Intelligence
+   615→
+   616→Soluções de IA, agentes inteligentes e sistemas de conhecimento avançados.
+   617→
+   618→4. Atlas Financial
+   619→
+   620→Infraestrutura tecnológica para pagamentos, blockchain e soluções financeiras digitais.
+   621→
+   622→5. Atlas Cloud
+   623→
+   624→Arquitetura cloud, DevOps, segurança e infraestrutura escalável.
+   625→
+   626→6. Atlas Labs
+   627→
+   628→Investigação, prototipagem e inovação para criar as tecnologias de amanhã.
+   629→
+   630→7. Atlas Research
+   631→
+   632→Estudos, whitepapers e investigação aplicada em tecnologia.
+   633→
+   634→8. Atlas Network
+   635→
+   636→Projetos independentes e colaborações que fazem parte da rede Atlas.
+   637→
+   638→Card requirements:
+   639→
+   640→• four columns on desktop;
+   641→• two rows;
+   642→• responsive reduction to two columns;
+   643→• one column on narrow mobile;
+   644→• thin border;
+   645→• dark elevated surface;
+   646→• icon;
+   647→• title;
+   648→• description;
+   649→• arrow affordance;
+   650→• subtle hover elevation;
+   651→• visible keyboard focus;
+   652→• coloured lower accent line;
+   653→• no broken links.
+   654→
+   655→Accent logic:
+   656→
+   657→• Atlas Platform — blue
+   658→• Atlas Advisory — violet
+   659→• Atlas Intelligence — green
+   660→• Atlas Financial — orange
+   661→• Atlas Cloud — cyan
+   662→• Atlas Labs — purple
+   663→• Atlas Research — magenta
+   664→• Atlas Network — pink
+   665→
+   666→Use controlled accent colours.
+   667→
+   668→Do not turn the cards into neon panels.
+   669→
+   670→Do not add Atlas Core as another card.
+   671→
+   672→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   673→13. WHY ATLAS
+   674→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   675→
+   676→Required identifier:
+   677→
+   678→#sobre
+   679→
+   680→Eyebrow:
+   681→
+   682→PORQUÊ ATLAS?
+   683→
+   684→Main message:
+   685→
+   686→Unimos estratégia,
+   687→tecnologia e execução
+   688→para criar impacto real.
+   689→
+   690→Display four propositions.
+   691→
+   692→1. Visão Estratégica
+   693→
+   694→Entendemos o negócio para desenhar soluções que geram valor.
+   695→
+   696→2. Arquitetura Inteligente
+   697→
+   698→Projetamos plataformas escaláveis, seguras e preparadas para o futuro.
+   699→
+   700→3. Tecnologia Avançada
+   701→
+   702→Aplicamos IA, Cloud, Dados e Blockchain para resolver problemas complexos.
+   703→
+   704→4. Execução de Excelência
+   705→
+   706→Transformamos estratégia em produtos digitais de alta performance.
+   707→
+   708→Desktop:
+   709→
+   710→• main message on the left;
+   711→• four propositions aligned horizontally;
+   712→• subtle vertical separators;
+   713→• consistent icon treatment.
+   714→
+   715→Tablet and mobile:
+   716→
+   717→• adaptive two-column or one-column grid;
+   718→• no compressed text;
+   719→• no horizontal overflow.
+   720→
+   721→Do not add statistics or unsupported claims.
+   722→
+   723→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   724→14. TECHNOLOGY STACK
+   725→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   726→
+   727→Required identifier:
+   728→
+   729→#tecnologias
+   730→
+   731→Eyebrow:
+   732→
+   733→TECNOLOGIAS QUE UTILIZAMOS
+   734→
+   735→Heading:
+   736→
+   737→As melhores tecnologias.
+   738→Para os melhores resultados.
+   739→
+   740→Display these primary badges:
+   741→
+   742→• TypeScript
+   743→• Next.js
+   744→• React
+   745→• Node.js
+   746→• PostgreSQL
+   747→• Docker
+   748→• Kubernetes
+   749→• AI / LLMs
+   750→
+   751→Action:
+   752→
+   753→Ver todas as tecnologias
+   754→
+   755→The button must not lead to an unfinished page.
+   756→
+   757→For phase 1, it may open a lightweight accessible dialog containing grouped technology categories:
+   758→
+   759→Frontend:
+   760→• Next.js
+   761→• React
+   762→• TypeScript
+   763→• Tailwind CSS
+   764→
+   765→Backend:
+   766→• Node.js
+   767→• Fastify
+   768→• Prisma
+   769→
+   770→Data:
+   771→• PostgreSQL
+   772→• Supabase
+   773→• Storage
+   774→
+   775→Infrastructure:
+   776→• Docker
+   777→• Kubernetes
+   778→• Ubuntu
+   779→• Nginx
+   780→• Cloudflare
+   781→• Vercel
+   782→
+   783→Artificial Intelligence:
+   784→• LLMs
+   785→• RAG
+   786→• AI Agents
+   787→• Prompt Engineering
+   788→
+   789→Do not imply that every technology is already used in every Atlas project.
+   790→
+   791→Use restrained wording such as:
+   792→
+   793→“Tecnologias utilizadas e previstas na arquitetura Atlas.”
+   794→
+   795→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   796→15. FINAL CTA
+   797→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   798→
+   799→Required identifier:
+   800→
+   801→#contacto
+   802→
+   803→Reproduce the blue-violet gradient panel shown in the mockup.
+   804→
+   805→Main heading:
+   806→
+   807→Vamos construir o
+   808→próximo projeto de sucesso.
+   809→
+   810→Supporting copy:
+   811→
+   812→Fale com a Atlas e descubra como podemos transformar a sua ideia numa plataforma digital de impacto.
+   813→
+   814→Action card 1:
+   815→
+   816→Agendar Reunião
+   817→
+   818→Supporting text:
+   819→
+   820→Marque uma conversa estratégica com a nossa equipa.
+   821→
+   822→Action card 2:
+   823→
+   824→Falar no WhatsApp
+   825→
+   826→Supporting text:
+   827→
+   828→Fale connosco através do seu canal preferido.
+   829→
+   830→Configuration:
+   831→
+   832→NEXT_PUBLIC_ATLAS_BOOKING_URL=
+   833→NEXT_PUBLIC_ATLAS_WHATSAPP_URL=
+   834→NEXT_PUBLIC_ATLAS_CONTACT_EMAIL=hello@atlasglobal.digital
+   835→
+   836→Rules:
+   837→
+   838→• Never invent a booking URL.
+   839→• Never invent a WhatsApp number.
+   840→• Never hardcode an unconfirmed telephone number.
+   841→• If the booking URL is missing, open the contact dialog.
+   842→• If the WhatsApp URL is missing, open the contact dialog.
+   843→• No button may lead to an empty or broken destination.
+   844→
+   845→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   846→16. CONTACT DIALOG
+   847→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   848→
+   849→Create an accessible contact dialog using the existing shadcn/ui or Radix Dialog primitives.
+   850→
+   851→Open it from:
+   852→
+   853→• navbar CTA;
+   854→• hero secondary CTA;
+   855→• booking fallback;
+   856→• WhatsApp fallback.
+   857→
+   858→Fields:
+   859→
+   860→• Nome
+   861→• Email
+   862→• Empresa — optional
+   863→• País — optional
+   864→• Área de interesse
+   865→• Descrição do projeto
+   866→• Canal preferido
+   867→• Consentimento de contacto
+   868→
+   869→Interest options:
+   870→
+   871→• Atlas Platform
+   872→• Atlas Advisory
+   873→• Atlas Intelligence
+   874→• Atlas Financial
+   875→• Atlas Cloud
+   876→• Atlas Labs
+   877→• Atlas Research
+   878→• Partnership
+   879→• General enquiry
+   880→
+   881→Use:
+   882→
+   883→• React Hook Form;
+   884→• Zod;
+   885→• accessible labels;
+   886→• inline validation;
+   887→• loading state;
+   888→• success state;
+   889→• error state;
+   890→• honeypot protection.
+   891→
+   892→Create a replaceable service abstraction:
+   893→
+   894→contactService.submit(payload)
+   895→
+   896→Preferred behaviour:
+   897→
+   898→1. Submit to a configured secure server-side endpoint when available.
+   899→2. Use a configured webhook only from the server.
+   900→3. Fall back to a prepared email interaction when no backend is configured.
+   901→
+   902→Default contact email:
+   903→
+   904→hello@atlasglobal.digital
+   905→
+   906→Do not expose:
+   907→
+   908→• bot tokens;
+   909→• private webhooks;
+   910→• API credentials;
+   911→• Telegram credentials.
+   912→
+   913→Do not write submissions into local JSON files.
+   914→
+   915→Do not show a success message unless the message was genuinely submitted or the email interaction was initiated.
+   916→
+   917→The future Atlas Core integration must not require rewriting the form UI.
+   918→
+   919→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   920→17. FOOTER
+   921→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   922→
+   923→Required identifier:
+   924→
+   925→#recursos
+   926→
+   927→Reproduce the general footer composition of the mockup.
+   928→
+   929→Brand block:
+   930→
+   931→ATLAS GLOBAL
+   932→Research • Architecture • Platforms
+   933→
+   934→Description:
+   935→
+   936→A Atlas Global é uma empresa de Research, Architecture & Platforms. Criamos soluções digitais inteligentes que impulsionam organizações e transformam o futuro.
+   937→
+   938→Navigation column:
+   939→
+   940→• Início
+   941→• Soluções
+   942→• Ecossistema
+   943→• Tecnologias
+   944→• Sobre Nós
+   945→• Recursos
+   946→
+   947→Resources column:
+   948→
+   949→Only use working destinations.
+   950→
+   951→Recommended launch links:
+   952→
+   953→• Ecossistema
+   954→• Tecnologias
+   955→• GitHub
+   956→• Falar com a Atlas
+   957→
+   958→Official GitHub:
+   959→
+   960→https://github.com/atlasglobal-core/atlas-global
+   961→
+   962→Contacts:
+   963→
+   964→Default confirmed email:
+   965→
+   966→hello@atlasglobal.digital
+   967→
+   968→Do not publish the following mockup values unless they are explicitly confirmed in configuration:
+   969→
+   970→• +351 910 000 000
+   971→• Lisboa, Portugal
+   972→• Seg – Sex: 09:00 – 18:00
+   973→
+   974→Social links:
+   975→
+   976→• GitHub may be active using the confirmed repository URL.
+   977→• LinkedIn, X and YouTube must only appear when valid URLs are configured.
+   978→
+   979→Do not use “#” as a fake social URL.
+   980→
+   981→Copyright:
+   982→
+   983→© 2026 Atlas Global. Todos os direitos reservados.
+   984→
+   985→Legal links:
+   986→
+   987→Only display legal links when real pages or documents exist.
+   988→
+   989→Do not send visitors to 404 pages.
+   990→
+   991→Do not create invented legal content merely to fill the footer.
+   992→
+   993→Keep the layout balanced when optional links are unavailable.
+   994→
+   995→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   996→18. DESIGN SYSTEM
+   997→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   998→
+   999→Remove the visible gold visual direction from the official homepage.
+  1000→
+  1001→Use a dark navy, violet, purple and blue visual system.
+  1002→
+  1003→Suggested semantic foundation:
+  1004→
+  1005→--atlas-background: #020611;
+  1006→--atlas-background-secondary: #060B17;
+  1007→--atlas-surface: #0B1426;
+  1008→--atlas-surface-elevated: #101A2E;
+  1009→--atlas-text: #F8FAFC;
+  1010→--atlas-text-secondary: #A8B1C2;
+  1011→--atlas-text-muted: #7F8BA3;
+  1012→--atlas-border: rgba(148, 163, 184, 0.14);
+  1013→--atlas-violet: #8B5CF6;
+  1014→--atlas-purple: #7C3AED;
+  1015→--atlas-blue: #3B82F6;
+  1016→--atlas-cyan: #38BDF8;
+  1017→--atlas-magenta: #EC4899;
+  1018→
+  1019→Adjust exact values when needed to improve visual parity.
+  1020→
+  1021→Use semantic CSS variables.
+  1022→
+  1023→Do not scatter arbitrary hexadecimal values throughout components.
+  1024→
+  1025→Create or consolidate tokens for:
+  1026→
+  1027→• backgrounds;
+  1028→• surfaces;
+  1029→• borders;
+  1030→• primary text;
+  1031→• secondary text;
+  1032→• gradients;
+  1033→• focus rings;
+  1034→• spacing;
+  1035→• container width;
+  1036→• border radius;
+  1037→• shadows;
+  1038→• motion duration;
+  1039→• easing curves.
+  1040→
+  1041→Dark mode is the only required mode for phase 1.
+  1042→
+  1043→Do not create a theme switcher.
+  1044→
+  1045→Use Inter or the existing approved optimized sans-serif font.
+  1046→
+  1047→Do not load the same font twice.
+  1048→
+  1049→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1050→19. COMPONENT ARCHITECTURE
+  1051→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1052→
+  1053→Do not rewrite the entire repository into a theoretical architecture.
+  1054→
+  1055→Improve the existing structure incrementally.
+  1056→
+  1057→Recommended composition:
+  1058→
+  1059→src/
+  1060→├── app/
+  1061→│   ├── layout.tsx
+  1062→│   ├── page.tsx
+  1063→│   ├── globals.css
+  1064→│   ├── robots.ts
+  1065→│   ├── sitemap.ts
+  1066→│   └── opengraph-image.tsx
+  1067→│
+  1068→├── components/
+  1069→│   ├── atlas/
+  1070→│   │   ├── AtlasButton.tsx
+  1071→│   │   ├── AtlasSectionHeading.tsx
+  1072→│   │   ├── AtlasEcosystemCard.tsx
+  1073→│   │   ├── AtlasTechnologyBadge.tsx
+  1074→│   │   ├── AtlasGlobe.tsx
+  1075→│   │   └── AtlasContactDialog.tsx
+  1076→│   │
+  1077→│   ├── layout/
+  1078→│   │   ├── AtlasNavbar.tsx
+  1079→│   │   ├── AtlasMobileNavigation.tsx
+  1080→│   │   └── AtlasFooter.tsx
+  1081→│   │
+  1082→│   ├── sections/
+  1083→│   │   ├── HeroSection.tsx
+  1084→│   │   ├── TechnologyTrustSection.tsx
+  1085→│   │   ├── EcosystemSection.tsx
+  1086→│   │   ├── WhyAtlasSection.tsx
+  1087→│   │   ├── TechnologiesSection.tsx
+  1088→│   │   └── FinalCTASection.tsx
+  1089→│   │
+  1090→│   └── ui/
+  1091→│
+  1092→├── config/
+  1093→│   └── site.ts
+  1094→│
+  1095→├── data/
+  1096→│   └── homepage.ts
+  1097→│
+  1098→├── services/
+  1099→│   └── contact.service.ts
+  1100→│
+  1101→├── types/
+  1102→└── i18n/
+  1103→
+  1104→Architecture rules:
+  1105→
+  1106→• Server Components by default.
+  1107→• Client Components only for interaction and animation.
+  1108→• Keep content outside visual components.
+  1109→• Keep external communication inside services.
+  1110→• Keep public links and contact data in typed configuration.
+  1111→• Reuse demonstrated patterns.
+  1112→• Do not abstract hypothetical future patterns.
+  1113→• Do not duplicate content.
+  1114→• Do not modify shadcn primitives unnecessarily.
+  1115→• Remove obsolete homepage components only after verifying they are unused.
+  1116→• Preserve recoverability through Git history.
+  1117→
+  1118→src/app/page.tsx must remain a clear composition layer.
+  1119→
+  1120→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1121→20. INTERNATIONALISATION
+  1122→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1123→
+  1124→Default locale:
+  1125→
+  1126→pt-PT
+  1127→
+  1128→Use European Portuguese throughout the homepage.
+  1129→
+  1130→Examples:
+  1131→
+  1132→• contacto, not contato;
+  1133→• equipa, not equipe;
+  1134→• connosco, not conosco;
+  1135→• utilizadores, not usuários;
+  1136→• gerir, not gerenciar.
+  1137→
+  1138→Prepare for:
+  1139→
+  1140→• pt-PT
+  1141→• en
+  1142→• es
+  1143→
+  1144→Use next-intl where appropriate.
+  1145→
+  1146→Do not allow internationalisation work to block the Portuguese launch.
+  1147→
+  1148→Minimum requirements:
+  1149→
+  1150→• all visible institutional content externalised;
+  1151→• Portuguese is the stable default;
+  1152→• language selector is accessible;
+  1153→• unfinished translations fall back safely to Portuguese;
+  1154→• the root HTML language is correct;
+  1155→• no mixed Portuguese and English body copy, except official brand expressions and technology names.
+  1156→
+  1157→The expression:
+  1158→
+  1159→Research • Architecture • Platforms
+  1160→
+  1161→remains an official English brand signature.
+  1162→
+  1163→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1164→21. ANIMATION
+  1165→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1166→
+  1167→Use subtle motion only.
+  1168→
+  1169→Approved:
+  1170→
+  1171→• section fade and reveal;
+  1172→• controlled vertical movement;
+  1173→• card elevation;
+  1174→• button interaction;
+  1175→• navbar transition;
+  1176→• very subtle gradient motion;
+  1177→• restrained globe animation;
+  1178→• small arrow movement.
+  1179→
+  1180→Do not implement:
+  1181→
+  1182→• cinematic intro;
+  1183→• blocking animation;
+  1184→• cursor trails;
+  1185→• excessive parallax;
+  1186→• aggressive particles;
+  1187→• constant strong glow;
+  1188→• motion that delays page content.
+  1189→
+  1190→Respect:
+  1191→
+  1192→prefers-reduced-motion
+  1193→
+  1194→The website must remain fully usable without animation.
+  1195→
+  1196→Use CSS transitions for simple interactions.
+  1197→
+  1198→Use Framer Motion only where it adds genuine value.
+  1199→
+  1200→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1201→22. RESPONSIVENESS
+  1202→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1203→
+  1204→Validate at least:
+  1205→
+  1206→• 360 × 800
+  1207→• 390 × 844
+  1208→• 430 × 932
+  1209→• 768 × 1024
+  1210→• 1024 × 768
+  1211→• 1024 × 1536
+  1212→• 1280 × 800
+  1213→• 1440 × 900
+  1214→• 1920 × 1080
+  1215→
+  1216→Requirements:
+  1217→
+  1218→• no horizontal scrolling;
+  1219→• no clipped headings;
+  1220→• no overlapping content;
+  1221→• no inaccessible menu;
+  1222→• no off-screen dialog;
+  1223→• no technology-logo overflow;
+  1224→• no footer collisions;
+  1225→• no fixed heights that cut translated text;
+  1226→• no tiny tap targets;
+  1227→• no hover-only required functionality.
+  1228→
+  1229→Mobile composition:
+  1230→
+  1231→• compact navbar;
+  1232→• hero text first;
+  1233→• globe below or behind;
+  1234→• technology logos wrap;
+  1235→• ecosystem uses one or two columns;
+  1236→• Why Atlas uses one or two columns;
+  1237→• badges wrap naturally;
+  1238→• CTA cards stack;
+  1239→• footer reorganizes into clear groups.
+  1240→
+  1241→Do not merely shrink the desktop layout.
+  1242→
+  1243→Design the mobile layout intentionally.
+  1244→
+  1245→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1246→23. ACCESSIBILITY
+  1247→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1248→
+  1249→Target WCAG 2.2 AA.
+  1250→
+  1251→Required:
+  1252→
+  1253→• semantic landmarks;
+  1254→• one logical H1;
+  1255→• correct heading hierarchy;
+  1256→• keyboard navigation;
+  1257→• visible focus states;
+  1258→• accessible links and buttons;
+  1259→• labelled form fields;
+  1260→• accessible validation;
+  1261→• dialog focus trap;
+  1262→• ESC dialog close;
+  1263→• accessible mobile navigation;
+  1264→• sufficient contrast;
+  1265→• decorative assets hidden from screen readers;
+  1266→• meaningful image alt text;
+  1267→• reduced-motion support;
+  1268→• minimum practical touch targets;
+  1269→• no colour-only communication.
+  1270→
+  1271→Do not remove browser outlines without replacing them.
+  1272→
+  1273→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1274→24. SEO
+  1275→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1276→
+  1277→Replace obsolete positioning with:
+  1278→
+  1279→Title:
+  1280→
+  1281→Atlas Global — Research, Architecture & Platforms
+  1282→
+  1283→Description:
+  1284→
+  1285→A Atlas Global investiga, arquiteta e desenvolve plataformas digitais inteligentes, combinando inteligência artificial, engenharia de software, cloud e inovação.
+  1286→
+  1287→Official domain:
+  1288→
+  1289→https://atlasglobal.digital
+  1290→
+  1291→Implement:
+  1292→
+  1293→• metadataBase;
+  1294→• title template;
+  1295→• description;
+  1296→• canonical;
+  1297→• Open Graph;
+  1298→• Twitter card;
+  1299→• favicon;
+  1300→• Organization JSON-LD;
+  1301→• robots.ts;
+  1302→• sitemap.ts;
+  1303→• Open Graph image;
+  1304→• pt-PT locale;
+  1305→• index and follow.
+  1306→
+  1307→Search and remove obsolete public references to:
+  1308→
+  1309→• atlasglobal.com;
+  1310→• Global Business Infrastructure;
+  1311→• obsolete gold positioning;
+  1312→• fake social URLs;
+  1313→• obsolete metadata;
+  1314→• obsolete sitemap dates;
+  1315→• obsolete descriptions.
+  1316→
+  1317→Do not publish fake sameAs social profiles.
+  1318→
+  1319→The confirmed GitHub URL may be included:
+  1320→
+  1321→https://github.com/atlasglobal-core/atlas-global
+  1322→
+  1323→Use one canonical sitemap and robots implementation.
+  1324→
+  1325→Do not maintain conflicting static and dynamic versions.
+  1326→
+  1327→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1328→25. PERFORMANCE
+  1329→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1330→
+  1331→Required:
+  1332→
+  1333→• optimized local assets;
+  1334→• next/image where suitable;
+  1335→• correct responsive image sizing;
+  1336→• no oversized globe image;
+  1337→• no unnecessary third-party scripts;
+  1338→• no database connection during homepage rendering;
+  1339→• no chart libraries used on the homepage;
+  1340→• no dashboard components;
+  1341→• no unnecessary Client Components;
+  1342→• lazy-loaded optional interactions;
+  1343→• reserved media dimensions;
+  1344→• no hydration mismatch;
+  1345→• no duplicate font loading;
+  1346→• static generation where appropriate.
+  1347→
+  1348→Targets:
+  1349→
+  1350→• Lighthouse Performance: 90+
+  1351→• Accessibility: 95+
+  1352→• Best Practices: 95+
+  1353→• SEO: 95+
+  1354→
+  1355→Aim for 100 where practical.
+  1356→
+  1357→Do not fabricate performance results.
+  1358→
+  1359→Report the testing environment.
+  1360→
+  1361→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1362→26. SECURITY AND TRUST
+  1363→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1364→
+  1365→Do not expose secrets.
+  1366→
+  1367→Do not commit .env files.
+  1368→
+  1369→Do not place private tokens in NEXT_PUBLIC variables.
+  1370→
+  1371→Do not expose Telegram or webhook credentials.
+  1372→
+  1373→Do not log sensitive form submissions in production.
+  1374→
+  1375→Validate all submitted data.
+  1376→
+  1377→Do not claim Atlas Global is:
+  1378→
+  1379→• a bank;
+  1380→• a licensed payment institution;
+  1381→• a crypto exchange;
+  1382→• a custodian;
+  1383→• a regulated financial adviser.
+  1384→
+  1385→Do not claim formal partnerships with technology companies.
+  1386→
+  1387→Do not publish unverified client logos.
+  1388→
+  1389→Do not publish invented contact details.
+  1390→
+  1391→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1392→27. CODE QUALITY
+  1393→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1394→
+  1395→Required:
+  1396→
+  1397→• strict TypeScript;
+  1398→• no implicit any;
+  1399→• no unnecessary @ts-ignore;
+  1400→• no duplicated content;
+  1401→• no dead imports;
+  1402→• no browser console errors;
+  1403→• no hydration warnings;
+  1404→• no broken anchors;
+  1405→• no empty href;
+  1406→• no fake buttons;
+  1407→• no invalid nested interactive elements;
+  1408→• no hardcoded secrets;
+  1409→• no visible placeholder content;
+  1410→• no obsolete commented-out implementations;
+  1411→• no unnecessary scope expansion.
+  1412→
+  1413→Do not create excessive generic components.
+  1414→
+  1415→Create components around real patterns visible in the official design.
+  1416→
+  1417→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1418→28. README AND ENVIRONMENT
+  1419→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1420→
+  1421→Update README.md to describe the implementation that actually exists.
+  1422→
+  1423→Remove obsolete claims about:
+  1424→
+  1425→• cinematic intro;
+  1426→• AI Concierge;
+  1427→• old homepage versions;
+  1428→• gold enterprise branding;
+  1429→• unimplemented APIs;
+  1430→• fake metrics;
+  1431→• removed sections;
+  1432→• inactive integrations.
+  1433→
+  1434→README must include:
+  1435→
+  1436→• project purpose;
+  1437→• official positioning;
+  1438→• current stack;
+  1439→• installation;
+  1440→• development command;
+  1441→• lint command;
+  1442→• build command;
+  1443→• production command;
+  1444→• environment variables;
+  1445→• repository structure;
+  1446→• contact fallback;
+  1447→• deployment notes;
+  1448→• current limitations.
+  1449→
+  1450→Create or update:
+  1451→
+  1452→.env.example
+  1453→
+  1454→Include only empty or safe public examples.
+  1455→
+  1456→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1457→29. VALIDATION
+  1458→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1459→
+  1460→Use the repository package manager and lockfile.
+  1461→
+  1462→Run at minimum:
+  1463→
+  1464→• dependency installation;
+  1465→• TypeScript validation;
+  1466→• ESLint;
+  1467→• production build.
+  1468→
+  1469→Examples when Bun is the active package manager:
+  1470→
+  1471→bun install
+  1472→bun run lint
+  1473→bun run build
+  1474→
+  1475→Also verify:
+  1476→
+  1477→• homepage renders;
+  1478→• navbar works;
+  1479→• mobile menu works;
+  1480→• contact dialog works;
+  1481→• all anchors work;
+  1482→• globe asset loads;
+  1483→• no failed asset requests;
+  1484→• no console errors;
+  1485→• no hydration warnings;
+  1486→• no horizontal overflow;
+  1487→• metadata uses atlasglobal.digital;
+  1488→• no obsolete atlasglobal.com public references remain;
+  1489→• no visible gold rebrand remains;
+  1490→• no unapproved homepage section remains.
+  1491→
+  1492→When validation fails:
+  1493→
+  1494→1. identify the real cause;
+  1495→2. fix it;
+  1496→3. rerun validation;
+  1497→4. report the final result honestly.
+  1498→
+  1499→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1500→30. VISUAL ACCEPTANCE
+  1501→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1502→
+  1503→The implementation is accepted only when:
+  1504→
+  1505→1. The desktop page closely resembles AtlasGlobal.png.
+  1506→2. The overall section order is identical.
+  1507→3. The navbar structure is faithful.
+  1508→4. The hero uses the official wording.
+  1509→5. The connected globe dominates the right side.
+  1510→6. The violet-blue visual identity is consistent.
+  1511→7. The technology strip contains seven approved technologies.
+  1512→8. The ecosystem contains exactly eight cards.
+  1513→9. The Why Atlas section contains four propositions.
+  1514→10. The technology section contains eight primary badges.
+  1515→11. The final CTA contains meeting and WhatsApp actions.
+  1516→12. The footer follows the approved composition.
+  1517→13. Mobile layouts remain polished.
+  1518→14. No dashboard preview remains.
+  1519→15. No gold “Global Business Infrastructure” design remains.
+  1520→16. No screenshot substitutes real HTML.
+  1521→17. No placeholder contact data is published.
+  1522→18. All visible interactions work.
+  1523→19. The project builds successfully.
+  1524→20. The branch is pushed to GitHub.
+  1525→
+  1526→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1527→31. DEPLOYMENT READINESS
+  1528→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1529→
+  1530→Prepare for deployment at:
+  1531→
+  1532→https://atlasglobal.digital
+  1533→
+  1534→Do not modify DNS without explicit authorization.
+  1535→
+  1536→Do not claim production deployment unless the URL is publicly verified.
+  1537→
+  1538→If Vercel integration exists:
+  1539→
+  1540→• push the branch;
+  1541→• obtain the preview deployment;
+  1542→• return the preview URL;
+  1543→• do not promote to production before approval.
+  1544→
+  1545→Check:
+  1546→
+  1547→• production build;
+  1548→• root route;
+  1549→• asset paths;
+  1550→• locale behaviour;
+  1551→• metadata;
+  1552→• canonical domain;
+  1553→• robots;
+  1554→• sitemap;
+  1555→• Open Graph image;
+  1556→• environment variables;
+  1557→• contact fallback;
+  1558→• error handling.
+  1559→
+  1560→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1561→32. FINAL REPORT
+  1562→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1563→
+  1564→Return:
+  1565→
+  1566→A. Repository State
+  1567→
+  1568→• base branch;
+  1569→• feature branch;
+  1570→• final commit SHA;
+  1571→• Pull Request URL;
+  1572→• preview deployment URL.
+  1573→
+  1574→B. Implementation
+  1575→
+  1576→• sections implemented;
+  1577→• components created;
+  1578→• components modified;
+  1579→• components removed;
+  1580→• design-system changes;
+  1581→• responsive changes;
+  1582→• SEO changes;
+  1583→• contact behaviour.
+  1584→
+  1585→C. Files
+  1586→
+  1587→List important files:
+  1588→
+  1589→• created;
+  1590→• modified;
+  1591→• removed.
+  1592→
+  1593→D. Validation
+  1594→
+  1595→Return exact results for:
+  1596→
+  1597→• install;
+  1598→• TypeScript;
+  1599→• lint;
+  1600→• build;
+  1601→• responsive verification;
+  1602→• browser console;
+  1603→• asset loading.
+  1604→
+  1605→E. Configuration Required
+  1606→
+  1607→Report remaining variables:
+  1608→
+  1609→• booking URL;
+  1610→• WhatsApp URL;
+  1611→• contact email;
+  1612→• webhook;
+  1613→• social links.
+  1614→
+  1615→F. Real Launch Blockers
+  1616→
+  1617→Only list genuine blockers.
+  1618→
+  1619→Do not classify future optional features as blockers.
+  1620→
+  1621→G. Merge Procedure
+  1622→
+  1623→Provide the Pull Request or safe merge procedure.
+  1624→
+  1625→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1626→33. FINAL EXECUTION DIRECTIVE
+  1627→━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1628→
+  1629→Begin implementation now.
+  1630→
+  1631→Use:
+  1632→
+  1633→https://github.com/atlasglobal-core/atlas-global.git
+  1634→
+  1635→Create:
+  1636→
+  1637→feat/official-homepage-v1
+  1638→
+  1639→Use the attached AtlasGlobal.png as the official visual specification.
+  1640→
+  1641→Do not create a new project.
+  1642→
+  1643→Do not redesign the homepage.
+  1644→
+  1645→Do not stop after an audit.
+  1646→
+  1647→Implement the complete responsive institutional homepage.
+  1648→
+  1649→Restore the official identity:
+  1650→
+  1651→ATLAS GLOBAL
+  1652→Research • Architecture • Platforms
+  1653→
+  1654→Validate the production build.
+  1655→
+  1656→Commit the implementation.
+  1657→
+  1658→Push the branch.
+  1659→
+  1660→Open a Pull Request when supported.
+  1661→
+  1662→Return the implementation and deployment report.
+  1663→
+  1664→The priority is to launch Atlas Global with a credible, polished and technically stable institutional presence.

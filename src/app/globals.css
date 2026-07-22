@@ -1,0 +1,156 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Atlas Global Design System — Dark-first */
+  --background: #020611;
+  --foreground: #F8FAFC;
+  --card: #0B1426;
+  --card-foreground: #F8FAFC;
+  --popover: #0B1426;
+  --popover-foreground: #F8FAFC;
+  --primary: #7C3AED;
+  --primary-foreground: #F8FAFC;
+  --secondary: #101A2E;
+  --secondary-foreground: #F8FAFC;
+  --muted: #0B1426;
+  --muted-foreground: #7F8BA3;
+  --accent: #101A2E;
+  --accent-foreground: #F8FAFC;
+  --destructive: #EF4444;
+  --border: rgba(148, 163, 184, 0.14);
+  --input: rgba(148, 163, 184, 0.2);
+  --ring: #7C3AED;
+
+  /* Atlas semantic tokens */
+  --atlas-background: #020611;
+  --atlas-background-secondary: #060B17;
+  --atlas-surface: #0B1426;
+  --atlas-surface-elevated: #101A2E;
+  --atlas-text: #F8FAFC;
+  --atlas-text-secondary: #A8B1C2;
+  --atlas-text-muted: #7F8BA3;
+  --atlas-border: rgba(148, 163, 184, 0.14);
+  --atlas-violet: #8B5CF6;
+  --atlas-purple: #7C3AED;
+  --atlas-blue: #3B82F6;
+  --atlas-cyan: #38BDF8;
+  --atlas-magenta: #EC4899;
+
+  /* Gradients */
+  --atlas-gradient-primary: linear-gradient(135deg, #7C3AED, #3B82F6);
+  --atlas-gradient-text: linear-gradient(135deg, #8B5CF6, #3B82F6);
+  --atlas-gradient-cta: linear-gradient(135deg, #7C3AED, #2563EB);
+
+  /* Container */
+  --atlas-container: 1280px;
+
+  /* Motion */
+  --atlas-transition-fast: 150ms ease;
+  --atlas-transition-base: 250ms ease;
+  --atlas-transition-slow: 400ms ease;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Utility classes */
+.gradient-text {
+  background: var(--atlas-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: var(--atlas-gradient-cta);
+}
+
+.atlas-container {
+  max-width: var(--atlas-container);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .atlas-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid var(--atlas-violet);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling */
+.atlas-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.atlas-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.atlas-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 3px;
+}
+.atlas-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.3);
+}
