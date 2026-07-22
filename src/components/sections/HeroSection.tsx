@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react";
 import { heroData } from "@/data/homepage";
 import { useContactStore } from "@/lib/contact-store";
 import { AtlasButton } from "@/components/atlas/AtlasButton";
-import { AtlasGlobe } from "@/components/atlas/AtlasGlobe";
+import { AtlasHeroCube } from "@/components/atlas/AtlasHeroCube";
 
 export function HeroSection() {
   const { openDialog } = useContactStore();
@@ -66,14 +66,9 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Globe column */}
-        <div className="relative z-0 mt-12 w-full lg:mt-0 lg:w-[55%]">
-          <AtlasGlobe className="lg:relative" />
-          {/* Mobile: reduced opacity */}
-          <div
-            className="pointer-events-none absolute inset-0 bg-[#020611]/40 lg:hidden"
-            aria-hidden="true"
-          />
+        {/* 3D Cube column */}
+        <div className="relative z-0 mt-4 w-full lg:mt-0 lg:w-[55%]">
+          <AtlasHeroCube />
         </div>
       </div>
     </section>
